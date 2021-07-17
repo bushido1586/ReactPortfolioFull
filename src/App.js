@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
-import {Navbar, NavbarBrand } from 'reactstrap';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar dark color="primary">
-        <div className="container">
-          <NavbarBrand href="/">Brad Reed the Dev</NavbarBrand>
-        </div>
-      </Navbar>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 }
 
